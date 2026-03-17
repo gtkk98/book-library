@@ -37,7 +37,7 @@ public class BookService {
         return bookRepository.findByAuthorNameContainingIgnoreCase(authorName);
     }
 
-    public List<Book> getCategory(String category) {
+    public List<Book> getByCategory(String category) {
         return bookRepository.findByCategory(category);
     }
 
