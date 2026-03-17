@@ -3,8 +3,8 @@ package com.practice.book_library.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.practice.book_library.entity.Book;
 
-import java.awt.print.Book;
 import java.util.List;
 
 @Entity

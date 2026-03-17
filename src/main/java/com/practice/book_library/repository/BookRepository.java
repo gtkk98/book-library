@@ -15,7 +15,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     // "findBy" + "Authors" + "Name" + "ContainingIgnoreCase"
     // Spring knows to JOIN the authors table because of your @ManyToMany mapping
-    List<Book> findByAuthorNameContainingIgnoreCase(String authorName);
+    List<Book> findByAuthorsNameContainingIgnoreCase(String authorName);
 
     List<Book> findByCategory(String category);
 

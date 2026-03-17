@@ -30,7 +30,7 @@ public class AuthorService {
     }
 
     public List<Author> searchByName(String name) {
-        return authorRepository.findByAuthorNameContainingIgnoreCase(name);
+        return authorRepository.findByNameContainingIgnoreCase(name);
     }
 
     public Author updateAuthor(Long id, Author updatedAuthor) {
